@@ -12,14 +12,14 @@ class CreateUsersTable extends Migration {
 	 */
 	public function up(){
 		//Se crea la tabla usuarios con sus campos
-		Schema::create('users', function($table){
+		/*Schema::create('users', function($table){
 			$table->increments('id');
 			$table->string('name',100);
 			$table->string('username',100)->unique();
 			$table->string('email',100)->unique();
 			$table->string('password');
 			$table->timestamps();
-		});
+		});*/
 	}
 
 	/**
