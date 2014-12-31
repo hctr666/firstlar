@@ -43,7 +43,7 @@
 	<br>
     <div class="welcome">
     	<h1>Bienvenido {{ Auth::user()->name; }}</h1>
-    	<a href="logout">Cerrar sesión.</a>
+    	{{ HTML::link('/logout', 'Cerrar sesión.') }}
     </div>
 </body>
 </html>

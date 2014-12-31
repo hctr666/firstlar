@@ -44,12 +44,15 @@ class AuthController extends BaseController{
                     ->withInput();
 	}
 
-    public function logOut(){
-        Auth::logout();
-        return Redirect::to('login')
-                    ->with('mensaje_error', 'Tu sesión ha sido cerrada.');
-    }
+	/**
+	 * Muestra el formulario de login mostrando un mensaje de que cerro sesión.
+	 */
+	public function logOut()
+	{
+		Auth::logout();
+		return Redirect::to('login')
+					->with('mensaje_error', 'Tu sesión ha sido cerrada.');
+	}
 }
 
-
- ?>
+?>
