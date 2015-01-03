@@ -8,10 +8,10 @@
 		public function run(){
 
 			User::create(array(
-				'name'		=> 'Hctr',
-				'username' 	=> 'admin',
-				'email'		=> 'demmon.rules@gmail.com',
-				'password' 	=> Hash::make('admin')#encripta la contraseña 
+				'name'		=> 'hctr',
+				'username' 	=> 'adm',
+				'email'		=> 'hctr.441@gmail.com',
+				'password' 	=> Hash::make('hctr666')#encripta la contraseña 
 			));
 		}
 	}
